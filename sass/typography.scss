@@ -1,0 +1,278 @@
+/**
+ * Typography related stylesheet.
+ *
+ * This stylesheet needs to safely apply to CMS editor. Prefix all entries here
+ * with .typography class. If the style is not typography-related, it needs to
+ * go into another file - for example layout.[s]css
+ *
+ */
+
+
+
+
+/*****************************
+THEME TYPOGRAPHY 
+******************************/
+
+@import 'components/fonts';
+@import 'bootstrap_config/typography.scss';
+
+.typography {
+	font-family: $font-family-base;
+	
+	h1,
+	h2,
+	h3 {
+		color: $brand-primary;
+	}
+	h6 {
+		color: #666666;
+	}
+	p {
+		margin-bottom: $line-height-base;
+		font-size: $font-size-base;
+		line-height: $line-height-base;
+	}
+	a {
+		text-decoration: underline;
+		&:focus {
+			outline: none;
+		}
+	}
+	.metaInfo {
+		margin-bottom: $line-height-base/2; 
+		color: $gray;
+	}
+
+	/* Highlighting for search results titles and content snippets. */
+	span.highlight {
+		background: yellow;
+	}
+
+	// Quotes
+	blockquote {
+		// Blockquote-author available from the STYLES dropdown in the editor
+		small, .blockquote-author {
+			font-size: 85%;
+			color: $blockquote-small-color;
+		    display: block;
+		    line-height: $line-height-base;
+		    &:before {
+				content: '\2014 \00A0';// EM DASH, NBSP
+	    	}
+		}
+	}
+	// Quotes
+	q:before,
+	q:after {
+		content: "";
+	}
+
+	/*** FILE & LINK ICONS ***/
+	
+	.fileExt{
+		font-size: 0.8em;
+	}
+	
+	/* EXTERNAL LINKS */
+	a[href^="http://"],
+	a[href^="https"],
+	a.external {
+		padding-right: 13px;
+		display:inline-block;
+		background: transparent url(../../../themes/default/images/icons/external-link.png) no-repeat right 0; 
+	}
+
+	a[href$=".doc"],
+	a[href$=".DOC"],
+	a[href$=".docx"],
+	a[href$=".DOCX"],
+	.doc {
+		padding-left: 22px;
+		background: url(../../../themes/default/images/icons/page_word.png) no-repeat left 0;
+		padding-right: 0; /* override external link */
+	}
+	a[href$=".xls"],
+	a[href$=".XLS"],
+	a[href$=".xlsx"],
+	a[href$=".XLSX"],
+	.xls {
+		padding-left: 22px;
+		background: url(../../../themes/default/images/icons/page_excel.png) no-repeat left 0;
+		padding-right: 0; /* override external link */
+	}
+	a[href$=".gz"],
+	a[href$=".GZ"],
+	a[href$=".gzip"],
+	a[href$=".GZIP"],
+	a[href$=".zip"],
+	a[href$=".ZIP"],
+	.archive {
+		padding-left: 22px;
+		background: url(../../../themes/default/images/icons/page_white_zip.png) no-repeat left 0;
+		padding-right: 0; /* override external link */
+	}
+	a[href$=".exe"],
+	a[href$=".EXE"],
+	.application {
+		padding-left: 22px;
+		background: url(../../../themes/default/images/icons/application.png) no-repeat left 0;
+		padding-right: 0; /* override external link */
+	}
+	
+	a[href$=".pdf"],
+	a[href$=".PDF"],
+	.pdf {
+		padding-left: 22px;
+		background: url(../../../themes/default/images/icons/page_white_acrobat.png) no-repeat left 0;	
+		padding-right: 0; /* override external link */
+	}
+
+
+	/* Media insert formatting  (Youtube embed) */
+	.media.center{
+		margin:0 auto;
+		text-align:center;
+	}
+	.media.left{
+		float:left;
+		clear:left;
+		margin: 0 18px 18px 0px;
+	}
+	.media.leftAlone{
+		margin: 0 18px 18px 0;
+		float: none;
+		display: block;
+		clear: both;
+	}
+	.media.right{
+		float:right;
+		clear:right;
+		margin: 0 0 18px 18px;
+	}
+	
+	
+	/*** Image formatting ***/
+	img{
+		max-width: 100%;
+		height: auto;
+
+		&.right {
+			float:right;
+			clear:right;
+			margin: 0 0 18px 18px;
+		}
+		&.left {
+			float:left;
+			clear:left;
+			margin: 0 18px 18px 0px;
+		}
+		&.leftAlone {
+			margin: 0 18px 18px 0;
+			float: none;
+			display: block;
+			clear: both;
+		}
+		&.center {
+			display:block;
+			margin: 0 auto 18px auto;
+			clear: both;
+		}
+	}
+	.captionImage {
+		width: 100%;
+		max-width: 100%;
+
+		&.left {
+			float: left;
+			margin: 0 18px 18px 0px;			
+		}
+		&.right{
+			float:right;
+			margin: 0 0 18px 18px;
+		}
+		&.leftAlone{
+			float:none;
+			margin: 0 18px 18px 0px;
+		}
+		&.center{
+			margin: 0 auto 18px;
+		}
+		p {
+			clear: both;
+			margin: 8px 0;
+			color: #444;
+		}
+		img {
+			margin: 0 0 5px 0;
+		}
+	}
+
+	table {
+		@extend .table;
+		
+		// Bootstrap table styles available from the STYLES dropdown in the CMS editor
+		&.table-condensed {		// Condensed table w/ half padding
+			@extend .table-condensed;
+			margin-left: 0;		// needed so it appears in editor styles dropdown 
+		}
+		&.table-bordered {		// Bordered version
+			@extend .table-bordered;
+			margin-left: 0;		// needed so it appears in editor styles dropdown 
+		}
+		&.table-striped {		// Zebra-striping
+			@extend .table-striped;
+			margin-left: 0;		// needed so it appears in editor styles dropdown 
+		}
+		&.table-hover {			// Hover states
+			@extend .table-hover;
+			margin-left: 0;		// needed so it appears in editor styles dropdown 
+		}
+		
+		// Custom table combinations
+		&.table-bordered-striped {
+			@extend .table-bordered;
+			@extend .table-striped;
+		}
+		&.table-condensed-striped {
+			@extend .table-condensed;
+			@extend .table-striped;
+		}
+		
+		// Striped tables to allow hover state by default
+		&.table-striped, &.table-bordered-striped {
+			tbody tr:hover {
+				td, th {
+			      background-color: $table-bg-hover;
+			    }
+			}
+		}
+		
+		caption {
+			text-align: left;
+			padding: 4px 0;
+		}
+		
+		thead, tfoot, th {
+			font-weight: 700;
+		}
+	}
+	
+	
+
+	.linkSet {
+		@extend .list-unstyled;
+		border-bottom: 1px solid $gray-lighter;
+		li a {
+			display: block;
+			padding: 15px 0;			
+			border-top: 1px solid $gray-lighter;
+		}
+	}
+	
+	.heroUnit {
+		p {
+			font-size: ($font-size-base * 1.5);
+		}
+	}
+}

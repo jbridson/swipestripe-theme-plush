@@ -1,0 +1,211 @@
+/*
+* 	Customisations to the styling for main top navigation of sidemenu
+*/
+
+// Main Nav styles
+.navbar-default {
+	border: none;
+	background-color: transparent;
+	margin-bottom: 5px;
+}
+.navbar-collapse {
+	.navbar-nav {
+		margin-left: $grid-gutter-width*-1;
+		li {
+			&.active,
+			&.section {
+				a {
+					background-color: transparent;
+					color: $brand-primary;
+					span {
+						border-bottom: 2px solid $brand-primary;
+						padding-bottom: 2px;
+						&.dropdown-toggle {
+							border-bottom: none;
+							padding-bottom: 0;
+						}
+					}
+					&:hover {
+						background-color: transparent;
+						color: $brand-primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-family: $roboto;
+	font-size: 1.2em;
+	padding: 8px $grid-gutter-width/2;
+	color: $gray-light;
+	transition: color 200ms;
+	&:hover {
+		background-color: transparent;
+		color: $brand-primary;
+		transition: color 200ms;
+	}
+	// Make toggle click area bigger for fingers
+	&.has-children {
+		padding-right: 30px;
+		.caret {
+			margin-left: 0;
+		}
+	}
+}
+
+.navbar  span.showChildren { 
+	position: absolute;
+	padding-top: 3px;
+	margin-top: 5px;
+	width: 30px;
+	height: 40px;
+	top: 0;
+	right: 0;
+	text-align: center;
+	&:hover {
+		.caret {
+			border-top-color: $link-hover-color;
+			border-bottom-color: $link-hover-color;
+		}
+	}
+}
+// inverts the caret when the dropdown is open
+.navbar {
+	.dropdown.open {
+		a {
+			background-color: transparent;
+			color: $gray;
+			&:hover {
+				background-color: transparent;
+			}
+		}
+		.showChildren {
+			.caret {
+				border-top: 0 dotted;
+				border-bottom: 4px solid $brand-primary;
+			}
+		}
+		.dropdown-menu {
+			@include border-radius(4px);
+			li {
+				a {
+					padding: 3px $grid-gutter-width/2;
+					&:hover {
+						background-color: lighten($gray-lighter, 15%);
+						color: $gray-dark;
+					}
+				}
+			}
+		}
+	}
+}
+// added a background color to menu toggle icon
+.navbar-default .navbar-toggle {
+	.icon-bar {
+		background-color: $navbar-default-link-color;
+	}
+	&:hover {
+		.icon-bar {
+			background-color: $navbar-default-link-hover-color;
+		}
+	}
+}
+
+// Tablets / Desktop / Large Desktop
+@media (min-width: $screen-sm) {
+
+}
+
+// Tablets & small desktops only
+@media (max-width: $screen-sm-max) {	
+	.navbar {			// Smaller screen sizes 
+		span.showChildren { 
+			margin-top: 0;
+			right: 23px;
+		}
+		.dropdown.open {
+			.dropdown-menu {
+				width: 100%;
+				border: none;
+				float: none;
+				box-shadow: none;
+				position: relative;
+			}
+		}
+	}
+	.navbar-responsive-collapse {
+		margin-top: 50px;
+		.navbar-nav {
+			margin-top: 0;
+		}
+	}
+}
+
+
+/* Side navigation */
+.sidebar-nav {
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid $gray-dark;
+	border-bottom: 1px solid $gray-dark;
+	
+    .nav {
+    	.nav {
+    		border: none;
+    		li { /* third level */
+    			font-size: 0.9em;
+		    	a {
+		    		padding-left: $grid-gutter-width;
+			    	padding-right: $grid-gutter-width;
+		    	}
+				.nav li {  /* fourth level */
+			    	a {
+			    		padding-left: $grid-gutter-width*1.5;
+				    	padding-right: $grid-gutter-width*1.5;
+			    	}
+					.nav li { /* fifth level */
+				    	a {
+				    		padding-left: $grid-gutter-width*2;
+					    	padding-right: $grid-gutter-width*2;
+				    	}
+						.nav li { /* sixth level */
+					    	a {
+					    		padding-left: $grid-gutter-width*2.5;
+					    		padding-right: $grid-gutter-width*2.5;
+					    	}
+					    }
+				    }
+			    }
+			}
+	    }
+	    a {
+	    	font-family: $alegreya-sc;
+	    	padding: 5px 0;
+	    }
+	    a:hover, a.active {
+	    	background-color: transparent;
+	    }
+	    .active > a {
+	    	color: $brand-primary;
+	    }
+      
+    }
+    .active > a,
+	.active:hover > a,
+	.active:focus > a,
+	.section > a {
+		font-weight: bold;
+	}
+}
+
+
+@media (max-width: 979px) {
+	.no-js {
+		.navbar button.btn-navbar {
+			display: none;
+		}
+	}
+}

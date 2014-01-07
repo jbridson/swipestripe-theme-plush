@@ -1,0 +1,16 @@
+.checkout-theme {
+	.personal-details {
+		.alert {
+			max-width: 490px;
+		}
+	}
+	.Actions {
+		float: none;
+		.loading {
+			display:none;
+			float:left;
+			padding:0 5px;
+			margin-top:2px;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+//Styles for the page breadcrumbs
+
+.breadcrumb {
+	background-color: transparent;
+	@include border-radius(0);
+	font-family: $roboto;
+	font-size: 0.9em;
+	margin: 10px 0;
+	margin-left: $grid-gutter-width/-2;
+}

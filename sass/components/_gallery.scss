@@ -1,0 +1,43 @@
+.layout {
+	.product-category {
+		float: none;
+		padding: 0 $grid-gutter-width/2;
+		.product-row {
+			@extend .row;
+			float: none;
+			.product-brief {
+				@extend .col-md-3;
+				padding: 0;
+				position: relative;
+				overflow: hidden;
+				.product-info {
+					position: absolute;
+					top: 0;
+					left: 0;
+					background-color: $gray-dark;
+					background-color: rgba(0, 0, 0, 0.7);
+					display: block;
+					&.hidden {
+						display: none;
+					}
+					a {
+						text-decoration: none;
+						display: block;
+						height: 100%;
+						width: 100%;
+						padding: $grid-gutter-width/2;
+					}
+					h5 {
+						color: #fff;
+						font-size: 1.3em;
+					}
+					.product-brief-price {
+						font-size: 2em;
+						color: $brand-focus;
+						font-family: $roboto;
+					}
+				}
+			}
+		}
+	}
+}

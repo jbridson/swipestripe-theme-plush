@@ -1,0 +1,73 @@
+/*IE6 bootstrap fixes*/
+#IE6 {
+	.col-md-12,
+	.col-md-11,
+	.col-md-10,
+	.col-md-9,
+	.col-md-8,
+	.col-md-7,
+	.col-md-6,
+	.col-md-5,
+	.col-md-4,
+	.col-md-3,
+	.col-md-2,
+	.col-md-1 {
+		float: left;
+		margin-left: 20px;
+	}
+
+	.breadcrumb .active {
+		background: transparent;
+	}
+
+	.nav-list
+	{
+		li {
+			a {
+				display: block;
+			}
+
+			&.active {
+				background-color: transparent;
+				a {
+					background-color: #0464EA;
+					color: white;
+				}
+
+				li a {
+					background-color: transparent;
+					color: #0464EA;
+				}
+			}
+		}
+	}
+
+	.nav-pills li {
+		float: left;
+
+		&.current {
+			background-color: transparent;
+		}
+
+		a {
+			margin: 2px 2px 2px 0;
+			padding: 8px 12px;
+			line-height: 14px;
+			display: block;
+			text-decoration: none;
+
+			&.current {
+				background-color: #0464EA;
+    			color: white;
+			}
+		}
+	}
+}
+
+/**
+ * Fix the responsive design's image-with-max-width-disappearing-on-float-right in IE8.
+ * http://www.456bereastreet.com/archive/201202/using_max-width_on_images_can_make_them_disappear_in_ie8/
+ */
+#IE8 .pull-right img {
+	max-width: none;
+}

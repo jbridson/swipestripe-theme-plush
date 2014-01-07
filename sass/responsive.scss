@@ -1,0 +1,37 @@
+ // Core bootstrap responsive components
+@import 'bootstrap_config/responsive.scss'; 
+
+/*****************************
+THEME REPONSIVE STYLES
+******************************/
+
+// Refer to the available screen sizes in _bootstrap_config/custom/_variables.scss
+
+
+// Phone only
+@media (max-width: $screen-xs-max) {
+	.search-form {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+}
+
+// Tablet only
+@media (min-width: $screen-xs) and (max-width: $screen-sm-max) {
+	.search-form {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+// Phone and Tablets only
+@media (max-width: $screen-sm-max) {
+}
+
+// Tablets & small desktops only
+@media (min-width: $screen-xs) and (max-width: $screen-md-max) {
+	.layout .row {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}

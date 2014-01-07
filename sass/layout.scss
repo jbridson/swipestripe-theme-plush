@@ -1,0 +1,284 @@
+//* The general rule is that the styles from here will not be needed for the CMS editor.
+//* Styles related to content editing should go into typography.[s]css.
+
+//* *** ATTENTION SCSS DEVELOPER ***
+//*
+//* If you are working with SCSS, please do not import other top-level 
+//* stylesheets here such as typography.scss. We want to be able to generate 
+//* clean CSS for the third-party dev to work with directly, without duplication 
+//* of css in the generated files!
+
+
+// Import needed scss files. Bootstrap files require the bootstrap module in the themes directory
+@import "compass/support"; //import an external compass library for IE9 SVG gradient support 
+$experimental-support-for-svg: true; //for IE9 SVG gradient support 
+
+@import 'bootstrap_config/bootstrap.scss'; //Core bootstrap layout components
+@import 'components/forms'; //form specific scss
+@import 'components/navigation'; //navigation components
+@import 'components/breadcrumbs'; //breadcrumb styles
+@import 'components/results'; //search results specific scss
+@import 'components/gallery'; //the swipestripe product gallery styling
+@import 'components/product'; //the swipestripe product page styling
+@import 'components/cart'; //the swipestripe shopping cart styling
+@import 'components/checkout'; //the swipestripe checkout styling
+@import 'ie';
+
+
+
+
+/*****************************
+THEME LAYOUT
+******************************/
+
+/* todo: this is a workaround for responsive.css including padding: 20px coming from module_bootstrap */
+body {
+	padding: 0 !important;
+}
+
+.top-section {
+	background-color: $header-bg;
+	border-bottom: 5px solid $brand-primary;
+}
+/* Customise search field */	
+.currency {
+	position: relative;
+	margin-top: 12px;
+	label.left {
+		display: none;
+	}
+	select.exchangerate {
+		-webkit-appearance: none;
+   		-moz-appearance: none;
+   		appearance: none;
+   		color: $gray-light;
+   		background-color: transparent;
+   		border: none;
+   		cursor: pointer;
+   		direction: rtl;
+		padding-right: 30px;
+		margin: 0;
+   		@include noShadow;
+   		//positions the chevron underneith the select box so chevron is clickable
+   		position: relative;
+   		z-index: 200;
+	}
+	.Actions {
+		display: none;
+	}
+	i {
+		position: absolute;
+		top: 12px;
+		right: 4px;
+		font-size: 0.8em;
+		color: $gray-light;
+		transition: color 300ms;
+		//positions the chevron underneith the select box so chevron is clickable
+		z-index: 0;
+		&.hover {
+			color: $brand-focus;
+			transition: color 300ms;
+		}
+	}
+}
+
+.search-form {
+	margin: 0 0 15px 0;
+	.search-query {
+		background-color: transparent;
+		border: none;
+		text-align: right;
+		color: $gray-light;
+		transition: color 300ms;
+		@include border-radius(0);
+		@include noShadow;
+		&:focus {
+			color: $brand-primary;
+			transition: color 300ms;
+		}
+	}
+	.btn {
+		border: none;
+		background-color: transparent;
+		padding: 9px 0 4px 0;
+		@include border-radius(0);
+		span {
+			@include hide-text;
+		}
+		i {
+			color: $gray-light;
+			transition: color 300ms;
+		}
+		&:hover {
+			i {
+				color: $brand-focus;
+				transition: color 300ms;
+			}
+		}
+		&:focus {
+			i {
+				color: $brand-focus;
+			}
+		}
+		&:active {
+			i {
+				color: darken($brand-focus, 5%);
+			}
+		}
+	}
+}
+
+.cart-count {
+	color: $gray-light;
+	text-align: right;
+	a {
+		font-size: 1.2em;
+		padding: 0 5px 0 10px;
+		color: $brand-primary;
+		transition: color 300ms;
+		position: relative;
+		&:hover {
+			text-decoration: none;
+			color: $brand-focus;
+			transition: color 300ms;
+		}
+	}
+}
+
+/*HEADER */
+header {
+	.brand {
+		#IE6 &,
+		#IE7 & {
+			width: 75%;
+		}
+		font-size: 3em;
+		font-weight: $bold;
+		font-family: $roboto;
+		overflow: visible;
+		line-height: 1em;
+		margin-top: 18px;
+		padding-bottom: 18px;
+		margin-bottom: 0;
+		display: inline-block;
+		a {
+			position: relative;
+			display: block;
+			color: $brand-primary;
+			opacity: 0.5;
+			transition: opacity 500ms;
+			&:hover {
+				text-decoration: none;
+				opacity: 1;
+				transition: opacity 500ms;
+			}
+			img {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+
+			span {
+				margin-top: 38px;
+			}
+
+			&:visited {
+				color: $brand-primary;
+			}
+		}
+	}
+}
+
+/************************ MISC ****************************/
+
+.layout { //Needed to override typography styles
+	.page-header {
+		margin-top: 0;
+	}
+}
+
+figure.featured-image {
+	float: right;
+}
+
+iframe {
+	border: 0;
+}
+
+footer {
+	padding-bottom: 20px;
+}
+
+
+
+/*Helper classes to customise icons*/
+.icon-dark{
+	color: $text-color;
+	&:visited{
+		color: $text-color;
+	}
+	&:hover{
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+} 
+.icon-small{
+	font-size:1em;
+}
+
+.navbar .btn-navbar {
+	float: left;
+	.nav-text {
+		float: left;
+		color: #c7c7c7;
+		margin-right: 7px;
+		text-shadow: none;
+	}
+
+	.nav-right {
+		float: right;
+		margin-top: 3px;
+	}
+
+	&:hover,
+	&:focus {
+		border-color: $gray;
+		background: $gray-dark;
+		.nav-text {
+			color: white;
+		}
+	}
+}
+
+/**
+ * Comments
+ */
+#comments-holder {
+	div.field {
+		clear: left;
+	}
+
+	.comments-holder {
+		li.comment {
+			list-style-type: none;
+			padding: 5px;
+			&.odd {
+				background: #eee;
+			}
+			&.unmoderated {
+				border: 2px dashed grey;
+			}
+
+			ul.action-links {
+				li {
+					list-style-type: none;
+					display: inline;
+					margin-right: 15px;
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

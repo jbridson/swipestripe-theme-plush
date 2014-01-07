@@ -1,0 +1,16 @@
+.product-theme {
+	.product-meta {
+		.add-to-cart {
+			.good {
+				@include message('success');
+				padding: 10px;
+			}
+			.field {
+				.quantity {
+					margin-bottom: 15px;
+					width: 40px;
+				}
+			}
+		}
+	}
+}
