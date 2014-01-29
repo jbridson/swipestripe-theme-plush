@@ -5,7 +5,7 @@
 			<h1 class="page-header">$Title</h1>
 
 			<div class="clearfix">
-				$Content.RichLinks
+				$Content
 			</div>
 			$Form
 			$PageComments
