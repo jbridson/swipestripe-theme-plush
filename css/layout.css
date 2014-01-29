@@ -417,7 +417,7 @@ html {
 body {
   font-family: "Alegreya", serif;
   font-size: 16px;
-  line-height: 1.42857;
+  line-height: 1.6;
   color: #333333;
   background-color: white;
 }
@@ -477,7 +477,7 @@ img {
 /* line 89, ../../module_bootstrap/lib/_scaffolding.scss */
 .img-thumbnail, .thumbnail {
   padding: 4px;
-  line-height: 1.42857;
+  line-height: 1.6;
   background-color: white;
   border: 1px solid #dddddd;
   border-radius: 4px;
@@ -495,8 +495,8 @@ img {
 
 /* line 109, ../../module_bootstrap/lib/_scaffolding.scss */
 hr {
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #cccccc;
 }
@@ -1461,7 +1461,7 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   font-size: 24px;
   line-height: inherit;
   color: #333333;
@@ -1529,7 +1529,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   color: #999999;
 }
 /* line 58, ../../module_bootstrap/lib/_mixins.scss */
-.form-control::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input[type="text"]::-moz-placeholder, input.text::-moz-placeholder, input[type="file"]::-moz-placeholder, input.file::-moz-placeholder {
+.form-control::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input[type="text"]::-moz-placeholder, input.text::-moz-placeholder, input[type="file"]::-moz-placeholder, input.file::-moz-placeholder, .sws textarea::-moz-placeholder, .sws select::-moz-placeholder, .sws input[type="text"]::-moz-placeholder, .sws input.text::-moz-placeholder, .sws input[type="file"]::-moz-placeholder, .sws input.file::-moz-placeholder {
   color: #999999;
 }
 /* line 59, ../../module_bootstrap/lib/_mixins.scss */
@@ -1537,18 +1537,18 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   color: #999999;
 }
 /* line 60, ../../module_bootstrap/lib/_mixins.scss */
-.form-control::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input.text::-webkit-input-placeholder, input[type="file"]::-webkit-input-placeholder, input.file::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input.text::-webkit-input-placeholder, input[type="file"]::-webkit-input-placeholder, input.file::-webkit-input-placeholder, .sws textarea::-webkit-input-placeholder, .sws select::-webkit-input-placeholder, .sws input[type="text"]::-webkit-input-placeholder, .sws input.text::-webkit-input-placeholder, .sws input[type="file"]::-webkit-input-placeholder, .sws input.file::-webkit-input-placeholder {
   color: #999999;
 }
 
 /* line 117, ../../module_bootstrap/lib/_forms.scss */
-.form-control, textarea, select, input[type="text"], input.text, input[type="file"], input.file {
+.form-control, textarea, select, input[type="text"], input.text, input[type="file"], input.file, .sws textarea, .sws select, .sws input[type="text"], .sws input.text, .sws input[type="file"], .sws input.file {
   display: block;
   width: 100%;
-  height: 36px;
+  height: 39px;
   padding: 6px 12px;
   font-size: 16px;
-  line-height: 1.42857;
+  line-height: 1.6;
   color: #555555;
   vertical-align: middle;
   background-color: white;
@@ -1573,7 +1573,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 }
 
 /* line 148, ../../module_bootstrap/lib/_forms.scss */
-textarea.form-control, textarea {
+textarea.form-control, textarea, .sws textarea {
   height: auto;
 }
 
@@ -1586,7 +1586,7 @@ textarea.form-control, textarea {
 .radio,
 .checkbox {
   display: block;
-  min-height: 22px;
+  min-height: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 20px;
@@ -1852,13 +1852,13 @@ textarea.input-lg, .input-group-lg > textarea,
 }
 
 /* line 10, ../../module_bootstrap/lib/_buttons.scss */
-.btn, .action {
+.btn, .action, .sws .action {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 16px;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.6;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -1900,7 +1900,7 @@ textarea.input-lg, .input-group-lg > textarea,
 }
 
 /* line 57, ../../module_bootstrap/lib/_buttons.scss */
-.btn-default, .action {
+.btn-default, .action, .sws .action {
   color: #333333;
   background-color: white;
   border-color: #cccccc;
@@ -1932,7 +1932,7 @@ textarea.input-lg, .input-group-lg > textarea,
 }
 
 /* line 60, ../../module_bootstrap/lib/_buttons.scss */
-.btn-primary, .action.primary {
+.btn-primary, .action.primary, .sws .action.primary {
   color: white;
   background-color: #3b3359;
   border-color: #302a49;
@@ -2383,7 +2383,7 @@ input[type="button"].btn-block {
 /* line 59, ../../module_bootstrap/lib/_dropdowns.scss */
 .dropdown-menu .divider {
   height: 1px;
-  margin: 10px 0;
+  margin: 11.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -2393,7 +2393,7 @@ input[type="button"].btn-block {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.6;
   color: #333333;
   white-space: nowrap;
 }
@@ -2441,7 +2441,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 3px 20px;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.6;
   color: #999999;
 }
 
@@ -2561,7 +2561,7 @@ a.list-group-item:hover, a.list-group-item:focus {
 
 /* line 7, ../../module_bootstrap/lib/_panels.scss */
 .panel {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   background-color: white;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -2896,7 +2896,7 @@ button.close {
 /* line 55, ../../module_bootstrap/lib/_navs.scss */
 .nav .nav-divider {
   height: 1px;
-  margin: 10px 0;
+  margin: 11.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -2917,7 +2917,7 @@ button.close {
 /* line 79, ../../module_bootstrap/lib/_navs.scss */
 .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 1.42857;
+  line-height: 1.6;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
@@ -3044,7 +3044,7 @@ button.close {
   position: relative;
   z-index: 1000;
   min-height: 50px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   border: 1px solid transparent;
 }
 /* line 21, ../../module_bootstrap/lib/_mixins.scss */
@@ -3197,9 +3197,9 @@ button.close {
 /* line 150, ../../module_bootstrap/lib/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 14px 15px;
+  padding: 12.5px 15px;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 25px;
 }
 /* line 156, ../../module_bootstrap/lib/_navbar.scss */
 .navbar-brand:hover, .navbar-brand:focus {
@@ -3244,13 +3244,13 @@ button.close {
 
 /* line 205, ../../module_bootstrap/lib/_navbar.scss */
 .navbar-nav {
-  margin: 7px -15px;
+  margin: 6.25px -15px;
 }
 /* line 208, ../../module_bootstrap/lib/_navbar.scss */
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 22px;
+  line-height: 25px;
 }
 @media (max-width: 767px) {
   /* line 216, ../../module_bootstrap/lib/_navbar.scss */
@@ -3270,7 +3270,7 @@ button.close {
   }
   /* line 228, ../../module_bootstrap/lib/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 22px;
+    line-height: 25px;
   }
   /* line 231, ../../module_bootstrap/lib/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -3289,8 +3289,8 @@ button.close {
   }
   /* line 245, ../../module_bootstrap/lib/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
   }
 }
 
@@ -3314,8 +3314,8 @@ button.close {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 5.5px;
+  margin-bottom: 5.5px;
 }
 @media (max-width: 767px) {
   /* line 288, ../../module_bootstrap/lib/_navbar.scss */
@@ -3359,15 +3359,15 @@ button.close {
 
 /* line 334, ../../module_bootstrap/lib/_navbar.scss */
 .navbar-btn {
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 5.5px;
+  margin-bottom: 5.5px;
 }
 
 /* line 343, ../../module_bootstrap/lib/_navbar.scss */
 .navbar-text {
   float: left;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
 }
 @media (min-width: 960px) {
   /* line 343, ../../module_bootstrap/lib/_navbar.scss */
@@ -3858,7 +3858,7 @@ button.close {
 /* line 6, ../../module_bootstrap/lib/_breadcrumbs.scss */
 .breadcrumb, #layout .resultsHeader {
   padding: 8px 15px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   list-style: none;
   background-color: whitesmoke;
   border-radius: 4px;
@@ -3882,7 +3882,7 @@ button.close {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 22px 0;
+  margin: 25px 0;
   border-radius: 4px;
 }
 /* line 10, ../../module_bootstrap/lib/_pagination.scss */
@@ -3895,7 +3895,7 @@ button.close {
   position: relative;
   float: left;
   padding: 6px 12px;
-  line-height: 1.42857;
+  line-height: 1.6;
   text-decoration: none;
   background-color: white;
   border: 1px solid #dddddd;
@@ -3983,7 +3983,7 @@ button.close {
 /* line 6, ../../module_bootstrap/lib/_pager.scss */
 .pager {
   padding-left: 0;
-  margin: 22px 0;
+  margin: 25px 0;
   list-style: none;
   text-align: center;
 }
@@ -4128,7 +4128,7 @@ body.modal-open {
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 16.42857px;
+  min-height: 16.6px;
 }
 
 /* line 91, ../../module_bootstrap/lib/_modals.scss */
@@ -4139,7 +4139,7 @@ body.modal-open {
 /* line 96, ../../module_bootstrap/lib/_modals.scss */
 .modal-title {
   margin: 0;
-  line-height: 1.42857;
+  line-height: 1.6;
 }
 
 /* line 103, ../../module_bootstrap/lib/_modals.scss */
@@ -4460,7 +4460,7 @@ body.modal-open {
 /* line 9, ../../module_bootstrap/lib/_alerts.scss */
 .alert {
   padding: 15px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -4801,8 +4801,8 @@ a.list-group-item.active > .badge,
 /* line 39, ../../module_bootstrap/lib/_progress-bars.scss */
 .progress {
   overflow: hidden;
-  height: 22px;
-  margin-bottom: 22px;
+  height: 25px;
+  margin-bottom: 25px;
   background-color: whitesmoke;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -5103,7 +5103,7 @@ a.list-group-item.active > .badge,
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 200;
-  line-height: 2.14286;
+  line-height: 2.4;
   color: inherit;
   background-color: #cccccc;
 }
@@ -5932,7 +5932,7 @@ td.visible-print {
 *	or modify it to change the look of your userforms
 */
 /*	General 	*/
-/* line 17, ../sass/components/_forms.scss */
+/* line 18, ../sass/components/_forms.scss */
 input,
 textarea,
 select,
@@ -5941,13 +5941,13 @@ select,
   margin-bottom: 15px;
 }
 
-/* line 24, ../sass/components/_forms.scss */
+/* line 25, ../sass/components/_forms.scss */
 button:focus,
 .btn:focus,
 .action:focus {
   outline: none;
 }
-/* line 27, ../sass/components/_forms.scss */
+/* line 28, ../sass/components/_forms.scss */
 button:active,
 .btn:active,
 .action:active {
@@ -5957,7 +5957,7 @@ button:active,
 }
 
 /* Styling for messages */
-/* line 33, ../sass/components/_forms.scss */
+/* line 34, ../sass/components/_forms.scss */
 .message {
   max-width: 490px;
   margin-bottom: 15px;
@@ -5975,8 +5975,8 @@ button:active,
   border: 1px solid #cccccc;
   color: #333333;
 }
-/* line 37, ../sass/components/_forms.scss */
-.message.error, label.required, .message.bad, .message.required {
+/* line 38, ../sass/components/_forms.scss */
+.message.error, label.required, .sws label.required, .message.bad, .message.required {
   padding: 5px;
   margin-right: 5px;
   font-weight: normal;
@@ -5992,7 +5992,7 @@ button:active,
   color: #b94a48;
   padding: 10px;
 }
-/* line 41, ../sass/components/_forms.scss */
+/* line 42, ../sass/components/_forms.scss */
 .message.good, .message.success {
   padding: 5px;
   margin-right: 5px;
@@ -6009,7 +6009,7 @@ button:active,
   color: #11894f;
   padding: 10px;
 }
-/* line 45, ../sass/components/_forms.scss */
+/* line 46, ../sass/components/_forms.scss */
 .message.warning {
   padding: 5px;
   margin-right: 5px;
@@ -6026,7 +6026,7 @@ button:active,
   color: #c09853;
   padding: 10px;
 }
-/* line 49, ../sass/components/_forms.scss */
+/* line 50, ../sass/components/_forms.scss */
 .message.info {
   padding: 5px;
   margin-right: 5px;
@@ -6044,7 +6044,7 @@ button:active,
   padding: 10px;
 }
 
-/* line 54, ../sass/components/_forms.scss */
+/* line 55, ../sass/components/_forms.scss */
 .required {
   color: #b94a48;
   border-color: #b94a48;
@@ -6057,15 +6057,15 @@ button:active,
 }
 
 /* Label formatting */
-/* line 61, ../sass/components/_forms.scss */
+/* line 62, ../sass/components/_forms.scss */
 label.left {
   font-weight: bold;
 }
-/* line 64, ../sass/components/_forms.scss */
+/* line 65, ../sass/components/_forms.scss */
 label.extra {
   font-style: italic;
 }
-/* line 67, ../sass/components/_forms.scss */
+/* line 68, ../sass/components/_forms.scss */
 label.required {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6075,22 +6075,22 @@ label.required {
   width: 100%;
   max-width: 490px;
 }
-/* line 74, ../sass/components/_forms.scss */
+/* line 75, ../sass/components/_forms.scss */
 .textarea label.required {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 80, ../sass/components/_forms.scss */
+/* line 81, ../sass/components/_forms.scss */
 span.extra {
   font-style: italic;
   font-weight: 300;
   display: inline-block;
-  margin-bottom: 11px;
+  margin-bottom: 12.5px;
   margin-left: 10px;
 }
 
-/* line 88, ../sass/components/_forms.scss */
+/* line 89, ../sass/components/_forms.scss */
 .requiredField label .req-indicator, .requiredField legend .req-indicator {
   position: relative;
   color: #b94a48;
@@ -6100,7 +6100,7 @@ span.extra {
   width: 6px;
   height: 16px;
 }
-/* line 96, ../sass/components/_forms.scss */
+/* line 97, ../sass/components/_forms.scss */
 .requiredField label .req-indicator:after, .requiredField legend .req-indicator:after {
   content: "*";
   position: absolute;
@@ -6108,18 +6108,18 @@ span.extra {
   text-indent: 0%;
 }
 
-/* line 106, ../sass/components/_forms.scss */
+/* line 107, ../sass/components/_forms.scss */
 legend {
   font-size: 16px;
   font-weight: normal;
-  line-height: 22px;
+  line-height: 25px;
   font-weight: bold;
   border-bottom: 0;
   margin-bottom: 5px;
 }
 
 /* Form fields formatting */
-/* line 116, ../sass/components/_forms.scss */
+/* line 117, ../sass/components/_forms.scss */
 textarea {
   width: 100%;
   height: 200px;
@@ -6128,7 +6128,7 @@ textarea {
   box-sizing: border-box;
 }
 
-/* line 122, ../sass/components/_forms.scss */
+/* line 123, ../sass/components/_forms.scss */
 select, input[type="text"], input.text, input[type="file"], input.file {
   width: 100%;
   max-width: 490px;
@@ -6137,23 +6137,23 @@ select, input[type="text"], input.text, input[type="file"], input.file {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 128, ../sass/components/_forms.scss */
+/* line 129, ../sass/components/_forms.scss */
 select.date, input[type="text"].date, input.text.date, input[type="file"].date, input.file.date {
   width: 110px;
   max-width: 100%;
 }
-/* line 131, ../sass/components/_forms.scss */
+/* line 132, ../sass/components/_forms.scss */
 #IE7 select.date, #IE7 input[type="text"].date, #IE7 input.text.date, #IE7 input[type="file"].date, #IE7 input.file.date {
   width: 100px;
 }
-/* line 135, ../sass/components/_forms.scss */
+/* line 136, ../sass/components/_forms.scss */
 #IE7 select, #IE7 input[type="text"], #IE7 input.text, #IE7 input[type="file"], #IE7 input.file {
   height: 20px;
   width: 490px;
   line-height: 20px;
 }
 
-/* line 142, ../sass/components/_forms.scss */
+/* line 143, ../sass/components/_forms.scss */
 input.file,
 input[type="file"] {
   border: none;
@@ -6165,53 +6165,53 @@ input[type="file"] {
 }
 
 /* Checkboxes and radio buttons */
-/* line 151, ../sass/components/_forms.scss */
+/* line 152, ../sass/components/_forms.scss */
 form .optionset {
   list-style: none;
   margin-left: 0;
 }
-/* line 154, ../sass/components/_forms.scss */
+/* line 155, ../sass/components/_forms.scss */
 form .optionset input.checkbox {
   display: inline;
   height: auto;
   margin-top: -3px;
 }
-/* line 159, ../sass/components/_forms.scss */
+/* line 160, ../sass/components/_forms.scss */
 form .optionset input.radio {
   display: inline;
   height: auto;
   margin-top: -3px;
 }
-/* line 164, ../sass/components/_forms.scss */
+/* line 165, ../sass/components/_forms.scss */
 form .optionset label {
   font-weight: normal;
 }
-/* line 168, ../sass/components/_forms.scss */
+/* line 169, ../sass/components/_forms.scss */
 form .optionset span.extra,
 form .optionset label.extra {
   margin-left: 0;
 }
-/* line 171, ../sass/components/_forms.scss */
+/* line 172, ../sass/components/_forms.scss */
 form .optionset ul.optionset {
   margin-bottom: 0;
 }
 
-/* line 175, ../sass/components/_forms.scss */
+/* line 176, ../sass/components/_forms.scss */
 div.checkbox {
   padding-left: 0;
   position: relative;
 }
-/* line 178, ../sass/components/_forms.scss */
+/* line 179, ../sass/components/_forms.scss */
 div.checkbox input.checkbox {
   min-height: 9px;
   height: auto;
   margin: 3px 5px 0 0;
 }
-/* line 182, ../sass/components/_forms.scss */
+/* line 183, ../sass/components/_forms.scss */
 div.checkbox input.checkbox.required {
   margin-bottom: 40px;
 }
-/* line 186, ../sass/components/_forms.scss */
+/* line 187, ../sass/components/_forms.scss */
 div.checkbox label.required {
   position: absolute;
   top: 1.3em;
@@ -6219,25 +6219,25 @@ div.checkbox label.required {
 }
 
 /*	Date styles	*/
-/* line 196, ../sass/components/_forms.scss */
+/* line 197, ../sass/components/_forms.scss */
 div.date input {
   margin-right: 5px;
 }
 
-/* line 200, ../sass/components/_forms.scss */
+/* line 201, ../sass/components/_forms.scss */
 .ui-datepicker {
   width: 15em !important;
   max-width: 50% !important;
 }
 
-/* line 204, ../sass/components/_forms.scss */
+/* line 205, ../sass/components/_forms.scss */
 .ui-widget {
   font-size: 12px !important;
   line-height: 12px !important;
 }
 
 /* Submit button styling */
-/* line 211, ../sass/components/_forms.scss */
+/* line 212, ../sass/components/_forms.scss */
 .Actions {
   border-top: 1px solid gainsboro;
   padding: 15px 0;
@@ -6253,25 +6253,352 @@ div.date input {
 .Actions:after {
   clear: both;
 }
-/* line 215, ../sass/components/_forms.scss */
+/* line 216, ../sass/components/_forms.scss */
 .Actions #MemberLoginForm_LoginForm_action_dologin {
   float: left;
 }
-/* line 218, ../sass/components/_forms.scss */
+/* line 219, ../sass/components/_forms.scss */
 .Actions #ForgotPassword {
   line-height: 2em;
   font-size: 0.9em;
 }
-/* line 221, ../sass/components/_forms.scss */
+/* line 222, ../sass/components/_forms.scss */
 .Actions #ForgotPassword a {
   padding-left: 30px;
 }
 
-/* line 226, ../sass/components/_forms.scss */
+/* line 227, ../sass/components/_forms.scss */
 .action {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 11px 11px 0;
+  margin: 0 12.5px 12.5px 0;
+  height: 2.31em;
+}
+
+/* line 242, ../sass/components/_forms.scss */
+.sws {
+  /* Styling for messages */
+  /* Label formatting */
+  /* Form fields formatting */
+  /* Checkboxes and radio buttons */
+  /*	Date styles	*/
+  /* Submit button styling */
+}
+/* line 18, ../sass/components/_forms.scss */
+.sws input,
+.sws textarea,
+.sws select,
+.sws .uneditable-input {
+  height: 1.385em;
+  margin-bottom: 15px;
+}
+/* line 25, ../sass/components/_forms.scss */
+.sws button:focus,
+.sws .btn:focus {
+  outline: none;
+}
+/* line 28, ../sass/components/_forms.scss */
+.sws button:active,
+.sws .btn:active {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* line 34, ../sass/components/_forms.scss */
+.sws .message {
+  max-width: 490px;
+  margin-bottom: 15px;
+  padding: 5px;
+  margin-right: 5px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  clear: both;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #d9d9d9;
+  border: 1px solid #cccccc;
+  color: #333333;
+}
+/* line 38, ../sass/components/_forms.scss */
+.sws .message.error, .sws .message.bad, .sws .message.required {
+  padding: 5px;
+  margin-right: 5px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  clear: both;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fcf6f6;
+  border: 1px solid #f6e3e6;
+  color: #b94a48;
+  padding: 10px;
+}
+/* line 42, ../sass/components/_forms.scss */
+.sws .message.good, .sws .message.success {
+  padding: 5px;
+  margin-right: 5px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  clear: both;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #96f2c6;
+  border: 1px solid #7fefa7;
+  color: #11894f;
+  padding: 10px;
+}
+/* line 46, ../sass/components/_forms.scss */
+.sws .message.warning {
+  padding: 5px;
+  margin-right: 5px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  clear: both;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fcf8e3;
+  border: 1px solid #fbeed5;
+  color: #c09853;
+  padding: 10px;
+}
+/* line 50, ../sass/components/_forms.scss */
+.sws .message.info {
+  padding: 5px;
+  margin-right: 5px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  clear: both;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #d9edf7;
+  border: 1px solid #bce8f1;
+  color: #3a87ad;
+  padding: 10px;
+}
+/* line 55, ../sass/components/_forms.scss */
+.sws .required {
+  color: #b94a48;
+  border-color: #b94a48;
+}
+/* line 332, ../sass/bootstrap_config/custom/_custom-mixins.scss */
+.sws .required:focus {
+  border-color: #953b39;
+  -webkit-box-shadow: 0 0 6px #d59392;
+  box-shadow: 0 0 6px #d59392;
+}
+/* line 62, ../sass/components/_forms.scss */
+.sws label.left {
+  font-weight: bold;
+}
+/* line 65, ../sass/components/_forms.scss */
+.sws label.extra {
+  font-style: italic;
+}
+/* line 68, ../sass/components/_forms.scss */
+.sws label.required {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  float: none;
+  width: 100%;
+  max-width: 490px;
+}
+/* line 75, ../sass/components/_forms.scss */
+.textarea .sws label.required {
+  width: 100%;
+  max-width: 100%;
+}
+/* line 81, ../sass/components/_forms.scss */
+.sws span.extra {
+  font-style: italic;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 12.5px;
+  margin-left: 10px;
+}
+/* line 89, ../sass/components/_forms.scss */
+.sws .requiredField label .req-indicator, .sws .requiredField legend .req-indicator {
+  position: relative;
+  color: #b94a48;
+  overflow: hidden;
+  text-indent: -999px;
+  display: inline-block;
+  width: 6px;
+  height: 16px;
+}
+/* line 97, ../sass/components/_forms.scss */
+.sws .requiredField label .req-indicator:after, .sws .requiredField legend .req-indicator:after {
+  content: "*";
+  position: absolute;
+  left: 0;
+  text-indent: 0%;
+}
+/* line 107, ../sass/components/_forms.scss */
+.sws legend {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 25px;
+  font-weight: bold;
+  border-bottom: 0;
+  margin-bottom: 5px;
+}
+/* line 117, ../sass/components/_forms.scss */
+.sws textarea {
+  width: 100%;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 123, ../sass/components/_forms.scss */
+.sws select, .sws input[type="text"], .sws input.text, .sws input[type="file"], .sws input.file {
+  width: 100%;
+  max-width: 490px;
+  height: 2.31em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 129, ../sass/components/_forms.scss */
+.sws select.date, .sws input[type="text"].date, .sws input.text.date, .sws input[type="file"].date, .sws input.file.date {
+  width: 110px;
+  max-width: 100%;
+}
+/* line 132, ../sass/components/_forms.scss */
+#IE7 .sws select.date, #IE7 .sws input[type="text"].date, #IE7 .sws input.text.date, #IE7 .sws input[type="file"].date, #IE7 .sws input.file.date {
+  width: 100px;
+}
+/* line 136, ../sass/components/_forms.scss */
+#IE7 .sws select, #IE7 .sws input[type="text"], #IE7 .sws input.text, #IE7 .sws input[type="file"], #IE7 .sws input.file {
+  height: 20px;
+  width: 490px;
+  line-height: 20px;
+}
+/* line 143, ../sass/components/_forms.scss */
+.sws input.file,
+.sws input[type="file"] {
+  border: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  padding-left: 0;
+  line-height: 0.5;
+}
+/* line 152, ../sass/components/_forms.scss */
+.sws form .optionset {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 155, ../sass/components/_forms.scss */
+.sws form .optionset input.checkbox {
+  display: inline;
+  height: auto;
+  margin-top: -3px;
+}
+/* line 160, ../sass/components/_forms.scss */
+.sws form .optionset input.radio {
+  display: inline;
+  height: auto;
+  margin-top: -3px;
+}
+/* line 165, ../sass/components/_forms.scss */
+.sws form .optionset label {
+  font-weight: normal;
+}
+/* line 169, ../sass/components/_forms.scss */
+.sws form .optionset span.extra,
+.sws form .optionset label.extra {
+  margin-left: 0;
+}
+/* line 172, ../sass/components/_forms.scss */
+.sws form .optionset ul.optionset {
+  margin-bottom: 0;
+}
+/* line 176, ../sass/components/_forms.scss */
+.sws div.checkbox {
+  padding-left: 0;
+  position: relative;
+}
+/* line 179, ../sass/components/_forms.scss */
+.sws div.checkbox input.checkbox {
+  min-height: 9px;
+  height: auto;
+  margin: 3px 5px 0 0;
+}
+/* line 183, ../sass/components/_forms.scss */
+.sws div.checkbox input.checkbox.required {
+  margin-bottom: 40px;
+}
+/* line 187, ../sass/components/_forms.scss */
+.sws div.checkbox label.required {
+  position: absolute;
+  top: 1.3em;
+  margin-top: 5px;
+}
+/* line 197, ../sass/components/_forms.scss */
+.sws div.date input {
+  margin-right: 5px;
+}
+/* line 201, ../sass/components/_forms.scss */
+.sws .ui-datepicker {
+  width: 15em !important;
+  max-width: 50% !important;
+}
+/* line 205, ../sass/components/_forms.scss */
+.sws .ui-widget {
+  font-size: 12px !important;
+  line-height: 12px !important;
+}
+/* line 212, ../sass/components/_forms.scss */
+.sws .Actions {
+  border-top: 1px solid gainsboro;
+  padding: 15px 0;
+}
+/* line 21, ../../module_bootstrap/lib/_mixins.scss */
+.sws .Actions:before, .sws .Actions:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, ../../module_bootstrap/lib/_mixins.scss */
+.sws .Actions:after {
+  clear: both;
+}
+/* line 216, ../sass/components/_forms.scss */
+.sws .Actions #MemberLoginForm_LoginForm_action_dologin {
+  float: left;
+}
+/* line 219, ../sass/components/_forms.scss */
+.sws .Actions #ForgotPassword {
+  line-height: 2em;
+  font-size: 0.9em;
+}
+/* line 222, ../sass/components/_forms.scss */
+.sws .Actions #ForgotPassword a {
+  padding-left: 30px;
+}
+/* line 227, ../sass/components/_forms.scss */
+.sws .action {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 12.5px 12.5px 0;
   height: 2.31em;
 }
 

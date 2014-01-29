@@ -2846,12 +2846,12 @@ ul.icons li .icon-large:before {
 
 /* line 9, ../../module_bootstrap/lib/_type.scss */
 p {
-  margin: 0 0 11px;
+  margin: 0 0 12.5px;
 }
 
 /* line 12, ../../module_bootstrap/lib/_type.scss */
 .lead {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   font-size: 18.4px;
   font-weight: 200;
   line-height: 1.4;
@@ -2937,16 +2937,16 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
 h1,
 h2,
 h3 {
-  margin-top: 22px;
-  margin-bottom: 11px;
+  margin-top: 25px;
+  margin-bottom: 12.5px;
 }
 
 /* line 70, ../../module_bootstrap/lib/_type.scss */
 h4,
 h5,
 h6 {
-  margin-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
 }
 
 /* line 75, ../../module_bootstrap/lib/_type.scss */
@@ -2997,8 +2997,8 @@ h4 small, .h4 small {
 
 /* line 91, ../../module_bootstrap/lib/_type.scss */
 .page-header {
-  padding-bottom: 10px;
-  margin: 44px 0 22px;
+  padding-bottom: 11.5px;
+  margin: 50px 0 25px;
   border-bottom: 1px solid transparent;
 }
 
@@ -3006,7 +3006,7 @@ h4 small, .h4 small {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 11px;
+  margin-bottom: 12.5px;
 }
 /* line 108, ../../module_bootstrap/lib/_type.scss */
 ul ul,
@@ -3031,13 +3031,13 @@ ol ol {
 
 /* line 131, ../../module_bootstrap/lib/_type.scss */
 dl {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 /* line 135, ../../module_bootstrap/lib/_type.scss */
 dt,
 dd {
-  line-height: 1.42857;
+  line-height: 1.6;
 }
 
 /* line 138, ../../module_bootstrap/lib/_type.scss */
@@ -3092,8 +3092,8 @@ abbr.initialism {
 
 /* line 182, ../../module_bootstrap/lib/_type.scss */
 blockquote {
-  padding: 11px 22px;
-  margin: 0 0 22px;
+  padding: 12.5px 25px;
+  margin: 0 0 25px;
   border-left: 5px solid #cccccc;
 }
 /* line 186, ../../module_bootstrap/lib/_type.scss */
@@ -3109,7 +3109,7 @@ blockquote p:last-child {
 /* line 194, ../../module_bootstrap/lib/_type.scss */
 blockquote small {
   display: block;
-  line-height: 1.42857;
+  line-height: 1.6;
   color: #999999;
 }
 /* line 198, ../../module_bootstrap/lib/_type.scss */
@@ -3148,9 +3148,9 @@ blockquote:after {
 /* line 233, ../../module_bootstrap/lib/_type.scss */
 address {
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   font-style: normal;
-  line-height: 1.42857;
+  line-height: 1.6;
 }
 
 /* line 8, ../../module_bootstrap/lib/_code.scss */
@@ -3172,10 +3172,10 @@ code {
 /* line 23, ../../module_bootstrap/lib/_code.scss */
 pre {
   display: block;
-  padding: 10.5px;
-  margin: 0 0 11px;
+  padding: 12px;
+  margin: 0 0 12.5px;
   font-size: 15px;
-  line-height: 1.42857;
+  line-height: 1.6;
   word-break: break-all;
   word-wrap: break-word;
   color: #333333;
@@ -3185,7 +3185,7 @@ pre {
 }
 /* line 37, ../../module_bootstrap/lib/_code.scss */
 pre.prettyprint {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 /* line 42, ../../module_bootstrap/lib/_code.scss */
 pre code {
@@ -3217,7 +3217,7 @@ th {
 /* line 17, ../../module_bootstrap/lib/_tables.scss */
 .table, .typography table {
   width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 /* line 26, ../../module_bootstrap/lib/_tables.scss */
 .table thead > tr > th, .typography table thead > tr > th,
@@ -3232,7 +3232,7 @@ th {
 .table tfoot > tr > td,
 .typography table tfoot > tr > td {
   padding: 8px;
-  line-height: 1.42857;
+  line-height: 1.6;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
@@ -3537,7 +3537,7 @@ table th[class*="col-"] {
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 200;
-  line-height: 2.14286;
+  line-height: 2.4;
   color: inherit;
   background-color: #cccccc;
 }
@@ -3643,9 +3643,9 @@ table th[class*="col-"] {
 }
 /* line 34, ../sass/typography.scss */
 .typography p {
-  margin-bottom: 1.42857;
+  margin-bottom: 1.6;
   font-size: 16px;
-  line-height: 1.42857;
+  line-height: 1.6;
 }
 /* line 39, ../sass/typography.scss */
 .typography a {
@@ -3657,7 +3657,7 @@ table th[class*="col-"] {
 }
 /* line 45, ../sass/typography.scss */
 .typography .metaInfo {
-  margin-bottom: 0.71429;
+  margin-bottom: 0.8;
   color: #555555;
 }
 /* line 51, ../sass/typography.scss */
@@ -3669,7 +3669,7 @@ table th[class*="col-"] {
   font-size: 85%;
   color: #999999;
   display: block;
-  line-height: 1.42857;
+  line-height: 1.6;
 }
 /* line 63, ../sass/typography.scss */
 .typography blockquote small:before, .typography blockquote .blockquote-author:before {
