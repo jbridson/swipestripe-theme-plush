@@ -15,13 +15,15 @@
 					<% end_loop %>
 				</ul>
 					
-				<div class="thumbs">
-					<% loop Product.OrderedImages %>
-							<a href="#slide-{$Pos}" id="slide-thumb-{$Pos}" class="slide-thumb">
-							 $CroppedImage(50,50)
-							</a>
-					<% end_loop %>
-				</div>
+				<% if Product.OrderedImages.count > 1 %>
+					<div class="thumbs">
+						<% loop Product.OrderedImages %>
+								<a href="#slide-{$Pos}" id="slide-thumb-{$Pos}" class="slide-thumb">
+								 $CroppedImage(50,50)
+								</a>
+						<% end_loop %>
+					</div>
+				<% end_if %>
 					
 
 				<div class="product-meta col-md-12">
