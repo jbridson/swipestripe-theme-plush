@@ -10,13 +10,51 @@
 				padding: 0;
 				position: relative;
 				overflow: hidden;
+				@media (min-width: 640px) and (max-width: $screen-sm-max) {
+					width: 25%;
+				}
+				@media (min-width: $screen-xs) and (max-width: 639px) {
+					width: 50%;
+				}
+				@media (max-width: $screen-xs) {
+					width: 100%;
+				}
+				img {
+					width: 100%;
+				}
+				.mask {
+					display: block;
+					height: 20px;
+					width: 20px;
+					position: absolute;
+					top: 0;
+					right: 0;
+					overflow: hidden;
+					z-index: 10;
+					&.focus {
+						span {
+							background-color: $brand-focus;
+						}
+					}
+					span {
+						width: 30px;
+						height: 30px;
+						display: block;
+						background-color: $header-bg;
+						@include rotate45;
+						position: relative;
+						top: -15px;
+						left: 6px;
+					}
+				}
 				.product-info {
 					position: absolute;
 					top: 0;
 					left: 0;
 					background-color: $gray-dark;
-					background-color: rgba(0, 0, 0, 0.7);
+					background-color: rgba(255, 252, 244, 0.8);
 					display: block;
+					border: 1px dashed darken($header-bg, 10%);
 					&.hidden {
 						display: none;
 					}
@@ -28,13 +66,23 @@
 						padding: $grid-gutter-width/2;
 					}
 					h5 {
-						color: #fff;
+						color: $gray;
 						font-size: 1.3em;
+						@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+							font-size: 1.1em;
+						}
+						@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+							font-size: 1em;
+							margin-top: 0;
+						}
 					}
 					.product-brief-price {
 						font-size: 2em;
-						color: $brand-focus;
+						color: $brand-primary;
 						font-family: $roboto;
+						@media (max-width: $screen-lg) {
+							font-size: 1.5em;
+						}
 					}
 				}
 			}

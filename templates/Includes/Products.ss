@@ -5,6 +5,9 @@
 	<div class="product-row">
 		<% loop Products %>
 			<div class="product-brief">
+				<span class="mask">
+					<span></span>
+				</span>
 				<a href="$Link">
 					<% with Images.first %>
 						<img src="$Filename" alt="$Name" />
