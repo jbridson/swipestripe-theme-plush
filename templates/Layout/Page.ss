@@ -12,7 +12,7 @@
 		</div>
 	</div>
 	<% if Menu(2) %>
-		<div class="col-md-3">
+		<div class="col-md-3 col-md-pull-9">
 			<% include SidebarNav %>
 		</div>
 	<% end_if %>

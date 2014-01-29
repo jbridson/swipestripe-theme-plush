@@ -34,13 +34,16 @@ THEME LAYOUT
 /* todo: this is a workaround for responsive.css including padding: 20px coming from module_bootstrap */
 body {
 	padding: 0 !important;
+	background-color: $header-bg;
 }
-
+.top-nav {
+	background-color: $brand-primary;
+}
 .top-section {
 	background-color: $header-bg;
-	border-bottom: 5px solid $brand-primary;
+	border-bottom: 1px dashed darken($header-bg, 10%);
 }
-/* Customise search field */	
+
 .currency {
 	position: relative;
 	margin-top: 12px;
@@ -81,7 +84,7 @@ body {
 		}
 	}
 }
-
+/* Customise search field */
 .search-form {
 	margin: 0 0 15px 0;
 	.search-query {
@@ -95,6 +98,21 @@ body {
 		&:focus {
 			color: $brand-primary;
 			transition: color 300ms;
+			&::-webkit-input-placeholder {
+			   color: $gray-lighter;
+			}
+
+			&:-moz-placeholder { /* Firefox 18- */
+			   color: $gray-lighter;
+			}
+
+			&::-moz-placeholder {  /* Firefox 19+ */
+			   color: $gray-lighter;
+			}
+
+			&:-ms-input-placeholder {  
+			   color: $gray-lighter;
+			}
 		}
 	}
 	.btn {
@@ -157,8 +175,8 @@ header {
 		font-family: $roboto;
 		overflow: visible;
 		line-height: 1em;
-		margin-top: 18px;
-		padding-bottom: 18px;
+		margin-top: 42px;
+		padding-bottom: 30px;
 		margin-bottom: 0;
 		display: inline-block;
 		a {
@@ -192,6 +210,8 @@ header {
 /************************ MISC ****************************/
 
 .layout { //Needed to override typography styles
+	background-color: #FFF;
+	padding-bottom: 40px;
 	.page-header {
 		margin-top: 0;
 	}
@@ -207,6 +227,9 @@ iframe {
 
 footer {
 	padding-bottom: 20px;
+	padding-top: 20px;
+	border-top: 1px dashed darken($header-bg, 10%);
+	background-color: $header-bg;
 }
 
 

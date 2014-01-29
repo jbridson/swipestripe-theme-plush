@@ -6,20 +6,34 @@
 .navbar-default {
 	border: none;
 	background-color: transparent;
-	margin-bottom: 5px;
+	margin-bottom: 0;
+	min-height: 40px;
 }
 .navbar-collapse {
 	.navbar-nav {
 		margin-left: $grid-gutter-width*-1;
 		li {
+			position: relative;
 			&.active,
 			&.section {
 				a {
 					background-color: transparent;
-					color: $brand-primary;
+					color: $header-bg;
+					&::after {
+						content: '';
+						width: 14px;
+						height: 14px;
+						position: absolute;
+						left: 50%;
+						margin-left: -7px;
+						bottom: -9px;
+						background-color: $brand-focus;
+						border-radius: 50%;
+						border: 2px solid $header-bg;
+						opacity: 1;
+					}
 					span {
-						border-bottom: 2px solid $brand-primary;
-						padding-bottom: 2px;
+						opacity: 0.8;
 						&.dropdown-toggle {
 							border-bottom: none;
 							padding-bottom: 0;
@@ -27,7 +41,14 @@
 					}
 					&:hover {
 						background-color: transparent;
-						color: $brand-primary;
+						color: $header-bg;
+						opacity: 1;
+					}
+				}
+				&.dropdown > a.has-children {
+					.caret {
+						border-top-color: $header-bg;
+						border-bottom-color:  $header-bg;
 					}
 				}
 			}
@@ -35,22 +56,37 @@
 	}
 }
 
-.navbar-default .navbar-nav > li > a {
-	font-family: $roboto;
-	font-size: 1.2em;
-	padding: 8px $grid-gutter-width/2;
-	color: $gray-light;
-	transition: color 200ms;
-	&:hover {
-		background-color: transparent;
-		color: $brand-primary;
-		transition: color 200ms;
+.navbar-default .navbar-nav {
+	> li > a {
+		font-family: $roboto;
+		text-transform: uppercase;
+		padding: 8px $grid-gutter-width/2;
+		color: $header-bg;
+		opacity: 1;
+		transition: opacity 200ms;
+		font-size: 0.8em;
+		&:hover {
+			background-color: transparent;
+			opacity: 0.8;
+			transition: opacity 200ms;
+			color: $header-bg;
+		}
 	}
-	// Make toggle click area bigger for fingers
-	&.has-children {
-		padding-right: 30px;
+	> .dropdown > a {
+		// Make toggle click area bigger for fingers
+		&.has-children {
+			padding-right: 30px;
+		}
 		.caret {
 			margin-left: 0;
+			border-top-color: $header-bg;
+			border-bottom-color: $header-bg;
+		}
+		&:hover {
+			.caret {
+				border-top-color: $header-bg;
+				border-bottom-color:  $header-bg;
+			}
 		}
 	}
 }
@@ -64,27 +100,28 @@
 	top: 0;
 	right: 0;
 	text-align: center;
-	&:hover {
-		.caret {
-			border-top-color: $link-hover-color;
-			border-bottom-color: $link-hover-color;
-		}
-	}
 }
 // inverts the caret when the dropdown is open
 .navbar {
 	.dropdown.open {
 		a {
 			background-color: transparent;
-			color: $gray;
+			color: $header-bg;
 			&:hover {
 				background-color: transparent;
+				color: $header-bg;
+				opacity: 0.8;
+				.caret {
+					border-top-color: $header-bg;
+					border-bottom-color:  $header-bg;
+					opacity: 0.8;
+				}
 			}
 		}
 		.showChildren {
 			.caret {
 				border-top: 0 dotted;
-				border-bottom: 4px solid $brand-primary;
+				border-bottom: 4px solid $header-bg;
 			}
 		}
 		.dropdown-menu {
@@ -92,6 +129,7 @@
 			li {
 				a {
 					padding: 3px $grid-gutter-width/2;
+					color: $gray;
 					&:hover {
 						background-color: lighten($gray-lighter, 15%);
 						color: $gray-dark;
@@ -145,13 +183,18 @@
 
 
 /* Side navigation */
+.side-nav-heading {
+	margin-top: 0;
+	@media (max-width: $screen-sm-max) {
+		font-size: 1.2em;
+	}
+}
 .sidebar-nav {
 	margin-bottom: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-top: 1px solid $gray-dark;
-	border-bottom: 1px solid $gray-dark;
-	
+	border-top: 1px dashed darken($header-bg, 10%);
+	border-bottom: 1px dashed darken($header-bg, 10%);
     .nav {
     	.nav {
     		border: none;

@@ -15,14 +15,17 @@
 
 <body data-spy="scroll" class="$ClassName">
 	
-	<div class="top-section">
-		<% include Header %>
+	<div class="top-nav">
 		<% include MainNav %>
 	</div>
+	<div class="top-section">
+		<% include Header %>
+	</div>
 
-	<div class="container typography layout" id="layout">
-		$Layout
-		<hr />
+	<div class="typography layout" id="layout">
+		<div class="container">
+			$Layout
+		</div>
 	</div>
 
 	<% include Footer %>

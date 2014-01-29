@@ -3650,54 +3650,54 @@ table th[class*="col-"] {
 .typography h3 {
   color: #3b3359;
 }
-/* line 28, ../sass/typography.scss */
+/* line 31, ../sass/typography.scss */
 .typography h6 {
   color: #666666;
 }
-/* line 31, ../sass/typography.scss */
+/* line 34, ../sass/typography.scss */
 .typography p {
   margin-bottom: 1.42857;
   font-size: 16px;
   line-height: 1.42857;
 }
-/* line 36, ../sass/typography.scss */
+/* line 39, ../sass/typography.scss */
 .typography a {
-  text-decoration: underline;
+  text-decoration: none;
 }
-/* line 38, ../sass/typography.scss */
+/* line 41, ../sass/typography.scss */
 .typography a:focus {
   outline: none;
 }
-/* line 42, ../sass/typography.scss */
+/* line 45, ../sass/typography.scss */
 .typography .metaInfo {
   margin-bottom: 0.71429;
   color: #555555;
 }
-/* line 48, ../sass/typography.scss */
+/* line 51, ../sass/typography.scss */
 .typography span.highlight {
   background: yellow;
 }
-/* line 55, ../sass/typography.scss */
+/* line 58, ../sass/typography.scss */
 .typography blockquote small, .typography blockquote .blockquote-author {
   font-size: 85%;
   color: #999999;
   display: block;
   line-height: 1.42857;
 }
-/* line 60, ../sass/typography.scss */
+/* line 63, ../sass/typography.scss */
 .typography blockquote small:before, .typography blockquote .blockquote-author:before {
   content: '\2014 \00A0';
 }
-/* line 67, ../sass/typography.scss */
+/* line 70, ../sass/typography.scss */
 .typography q:before,
 .typography q:after {
   content: "";
 }
-/* line 73, ../sass/typography.scss */
+/* line 76, ../sass/typography.scss */
 .typography .fileExt {
   font-size: 0.8em;
 }
-/* line 80, ../sass/typography.scss */
+/* line 83, ../sass/typography.scss */
 .typography a[href^="http://"],
 .typography a[href^="https"],
 .typography a.external {
@@ -3705,7 +3705,7 @@ table th[class*="col-"] {
   display: inline-block;
   background: transparent url(../../../themes/default/images/icons/external-link.png) no-repeat right 0;
 }
-/* line 90, ../sass/typography.scss */
+/* line 93, ../sass/typography.scss */
 .typography a[href$=".doc"],
 .typography a[href$=".DOC"],
 .typography a[href$=".docx"],
@@ -3716,7 +3716,7 @@ table th[class*="col-"] {
   padding-right: 0;
   /* override external link */
 }
-/* line 99, ../sass/typography.scss */
+/* line 102, ../sass/typography.scss */
 .typography a[href$=".xls"],
 .typography a[href$=".XLS"],
 .typography a[href$=".xlsx"],
@@ -3727,7 +3727,7 @@ table th[class*="col-"] {
   padding-right: 0;
   /* override external link */
 }
-/* line 110, ../sass/typography.scss */
+/* line 113, ../sass/typography.scss */
 .typography a[href$=".gz"],
 .typography a[href$=".GZ"],
 .typography a[href$=".gzip"],
@@ -3740,7 +3740,7 @@ table th[class*="col-"] {
   padding-right: 0;
   /* override external link */
 }
-/* line 117, ../sass/typography.scss */
+/* line 120, ../sass/typography.scss */
 .typography a[href$=".exe"],
 .typography a[href$=".EXE"],
 .typography .application {
@@ -3749,7 +3749,7 @@ table th[class*="col-"] {
   padding-right: 0;
   /* override external link */
 }
-/* line 125, ../sass/typography.scss */
+/* line 128, ../sass/typography.scss */
 .typography a[href$=".pdf"],
 .typography a[href$=".PDF"],
 .typography .pdf {
@@ -3758,134 +3758,134 @@ table th[class*="col-"] {
   padding-right: 0;
   /* override external link */
 }
-/* line 133, ../sass/typography.scss */
+/* line 136, ../sass/typography.scss */
 .typography .media.center {
   margin: 0 auto;
   text-align: center;
 }
-/* line 137, ../sass/typography.scss */
+/* line 140, ../sass/typography.scss */
 .typography .media.left {
   float: left;
   clear: left;
   margin: 0 18px 18px 0px;
 }
-/* line 142, ../sass/typography.scss */
+/* line 145, ../sass/typography.scss */
 .typography .media.leftAlone {
   margin: 0 18px 18px 0;
   float: none;
   display: block;
   clear: both;
 }
-/* line 148, ../sass/typography.scss */
+/* line 151, ../sass/typography.scss */
 .typography .media.right {
   float: right;
   clear: right;
   margin: 0 0 18px 18px;
 }
-/* line 156, ../sass/typography.scss */
+/* line 159, ../sass/typography.scss */
 .typography img {
   max-width: 100%;
   height: auto;
 }
-/* line 160, ../sass/typography.scss */
+/* line 163, ../sass/typography.scss */
 .typography img.right {
   float: right;
   clear: right;
   margin: 0 0 18px 18px;
 }
-/* line 165, ../sass/typography.scss */
+/* line 168, ../sass/typography.scss */
 .typography img.left {
   float: left;
   clear: left;
   margin: 0 18px 18px 0px;
 }
-/* line 170, ../sass/typography.scss */
+/* line 173, ../sass/typography.scss */
 .typography img.leftAlone {
   margin: 0 18px 18px 0;
   float: none;
   display: block;
   clear: both;
 }
-/* line 176, ../sass/typography.scss */
+/* line 179, ../sass/typography.scss */
 .typography img.center {
   display: block;
   margin: 0 auto 18px auto;
   clear: both;
 }
-/* line 182, ../sass/typography.scss */
+/* line 185, ../sass/typography.scss */
 .typography .captionImage {
   width: 100%;
   max-width: 100%;
 }
-/* line 186, ../sass/typography.scss */
+/* line 189, ../sass/typography.scss */
 .typography .captionImage.left {
   float: left;
   margin: 0 18px 18px 0px;
 }
-/* line 190, ../sass/typography.scss */
+/* line 193, ../sass/typography.scss */
 .typography .captionImage.right {
   float: right;
   margin: 0 0 18px 18px;
 }
-/* line 194, ../sass/typography.scss */
+/* line 197, ../sass/typography.scss */
 .typography .captionImage.leftAlone {
   float: none;
   margin: 0 18px 18px 0px;
 }
-/* line 198, ../sass/typography.scss */
+/* line 201, ../sass/typography.scss */
 .typography .captionImage.center {
   margin: 0 auto 18px;
 }
-/* line 201, ../sass/typography.scss */
+/* line 204, ../sass/typography.scss */
 .typography .captionImage p {
   clear: both;
   margin: 8px 0;
   color: #444;
 }
-/* line 206, ../sass/typography.scss */
+/* line 209, ../sass/typography.scss */
 .typography .captionImage img {
   margin: 0 0 5px 0;
 }
-/* line 215, ../sass/typography.scss */
+/* line 218, ../sass/typography.scss */
 .typography table.table-condensed, .typography table.table-condensed-striped {
   margin-left: 0;
 }
-/* line 219, ../sass/typography.scss */
+/* line 222, ../sass/typography.scss */
 .typography table.table-bordered, .typography table.table-bordered-striped {
   margin-left: 0;
 }
-/* line 223, ../sass/typography.scss */
+/* line 226, ../sass/typography.scss */
 .typography table.table-striped, .typography table.table-bordered-striped, .typography table.table-condensed-striped {
   margin-left: 0;
 }
-/* line 227, ../sass/typography.scss */
+/* line 230, ../sass/typography.scss */
 .typography table.table-hover {
   margin-left: 0;
 }
-/* line 245, ../sass/typography.scss */
+/* line 248, ../sass/typography.scss */
 .typography table.table-striped tbody tr:hover td, .typography table.table-bordered-striped tbody tr:hover td, .typography table.table-condensed-striped tbody tr:hover td, .typography table.table-striped tbody tr:hover th, .typography table.table-bordered-striped tbody tr:hover th, .typography table.table-condensed-striped tbody tr:hover th, .typography table.table-bordered-striped tbody tr:hover td, .typography table.table-bordered-striped tbody tr:hover th {
   background-color: #f0f0f0;
 }
-/* line 251, ../sass/typography.scss */
+/* line 254, ../sass/typography.scss */
 .typography table caption {
   text-align: left;
   padding: 4px 0;
 }
-/* line 256, ../sass/typography.scss */
+/* line 259, ../sass/typography.scss */
 .typography table thead, .typography table tfoot, .typography table th {
   font-weight: 700;
 }
-/* line 263, ../sass/typography.scss */
+/* line 266, ../sass/typography.scss */
 .typography .linkSet {
   border-bottom: 1px solid #cccccc;
 }
-/* line 266, ../sass/typography.scss */
+/* line 269, ../sass/typography.scss */
 .typography .linkSet li a {
   display: block;
   padding: 15px 0;
   border-top: 1px solid #cccccc;
 }
-/* line 274, ../sass/typography.scss */
+/* line 277, ../sass/typography.scss */
 .typography .heroUnit p {
   font-size: 24px;
 }

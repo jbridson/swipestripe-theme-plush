@@ -1,5 +1,5 @@
 <% if ClassName = ProductCategory %>
-	<h1 class="page-header">Filter By:</h1>
+	<h2 class="side-nav-heading">Filter By:</h2>
 <% end_if %>
 <div class="sidebar-nav">
 	<nav id="pageNav" role="navigation">

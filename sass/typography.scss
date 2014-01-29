@@ -25,6 +25,9 @@ THEME TYPOGRAPHY
 	h3 {
 		color: $brand-primary;
 	}
+	h1 {
+		//border-bottom: 1px solid $brand-primary;
+	}
 	h6 {
 		color: #666666;
 	}
@@ -34,7 +37,7 @@ THEME TYPOGRAPHY
 		line-height: $line-height-base;
 	}
 	a {
-		text-decoration: underline;
+		text-decoration: none;
 		&:focus {
 			outline: none;
 		}
